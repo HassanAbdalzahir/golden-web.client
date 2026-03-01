@@ -5,7 +5,7 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 
 # Copy web application
-COPY apps/web ./
+COPY . .
 
 # Install dependencies
 RUN npm install --legacy-peer-deps
